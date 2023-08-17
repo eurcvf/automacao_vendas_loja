@@ -27,7 +27,7 @@ tabela_completa = faturamento.join(quantidade).join(ticket_medio)
 # enviar um email com o relatório
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'eurcvf@hotmail.com'
+mail.To = 'seuemail@hotmail.com'
 mail.Subject = 'Relatório de Vendas | Análise Completa'
 mail.HTMLBody = f'''
 <p>Prezado,</p>
